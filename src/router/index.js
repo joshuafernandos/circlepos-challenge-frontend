@@ -1,8 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import ShopView from '@/views/ShopView.vue'
+import SingleProductView from '@/views/SingleProductView.vue'
 
 const routes = [
+    {
+        /**
+         * 404
+         */
+        path: "/:pathMatch(.*)*",
+        redirect: '/'
+    },
     {
         path: '/',
         name: 'home',
@@ -11,7 +19,12 @@ const routes = [
     {
         path: '/shop',
         name: 'shop',
-        component: ShopView
+        component: ShopView,
+    },
+    {
+        path: '/shop/:id',
+        name: 'shop-product',
+        component: SingleProductView
     }
 ]
 
