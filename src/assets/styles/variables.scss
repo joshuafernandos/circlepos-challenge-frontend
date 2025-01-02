@@ -1,0 +1,15 @@
+$primary: #074799; // Overiding bootstrap primary colour
+$success: green; // Overiding bootstrap primary colour
+$black: #000000;
+$grey: #4C585B;
+$light-blue: #F2F9FF;
+$white: #FFFFFF;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

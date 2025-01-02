@@ -1,6 +1,11 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+import './assets/styles/main.scss'
+import 'fontawesome-4.7/css/font-awesome.min.css';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
+createApp(App)
+    .use(router)
+    .mount('#app')
