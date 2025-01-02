@@ -9,6 +9,10 @@ const menuItems = [
     {
         title: 'Home',
         target: 'home',
+    },
+    {
+        title: 'Shop All',
+        target: 'shop',
     }
 ];
 </script>
